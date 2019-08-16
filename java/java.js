@@ -4,7 +4,7 @@ $('#someform').submit(function(event){
   alert("the second fire");
   var imputBug = parseInt($("select#bug").val());
   if (imputBug= 0){
-    $(".jss").append("You Speak JS!");
+    $("jss").append("You Speak JS!");
   };
   alert("the third fire");
   var imputBird= parseInt($("select#bird").val());
@@ -13,7 +13,7 @@ $('#someform').submit(function(event){
   };
   alert("the forth fire");
   var imputCat=parseInt($("select#cat").val());
-  if (imputBird= 0){
+  if (imputCat= 0){
     $('.jss').show();
   };
   var imputBlackKeys=parseInt($("select#blackkeys").val());
@@ -26,6 +26,10 @@ $('#someform').submit(function(event){
   };
   var imputDiamond=parseInt($("select#diamond").val());
   if (imputDiamond= 0){
+    $('.go').show();
+  };
+  var imputFly=parseInt($("select#fly").val());
+  if (imputFly= 1){
     $('.go').show();
   };
   event.preventDefault();
