@@ -1,8 +1,10 @@
 $(document).ready(function(){
-("btn").submit(function(event){
+  alert("the fire");
+$("btn").submit(function(event){
+  alert("the fire");
   var yourLanguage= "alkdjfldsajkfl";
-  $("p#output").text(yourLanguage);
-event.preventDefault();
+  $("p#output").append(yourLanguage);
+  event.preventDefault();
 });
 /*$("button").click(function(){
 $("button").fadeOut();
