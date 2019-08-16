@@ -1,0 +1,21 @@
+h1{
+  Color: purple;
+}
+h2{
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.totheright{
+  max-width: 55%;
+  max-height: auto;
+  float: right;
+}
+.question {
+  float: left;
+  font-style: italic;
+}
+.question p {
+  font-style: normal;
+  line-height: 36px;
+
+}
