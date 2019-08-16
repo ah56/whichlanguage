@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>The Language for Me</h1>
+      <h1>The <em>Language</em> for Me</h1>
       <h2><strong><em>A Working Computer Language</em></strong></h2>
       <div class="totheright">
         <img src= "roaringtiger.jpg">
@@ -17,6 +17,7 @@
         <div class="question">
           <h3>Please Complete the Following Form:</h3>
           <ul>
+            <form id="someform">
               <li>Do I Like Bugs?</li>
               <select class="form-control" id="yesorno">
                 <option>Yes</option>
@@ -52,8 +53,9 @@
                 <option>Yes</option>
                 <option>No</option>
               </select>
+            </form>
           </ul>
-          <button type="button" class="btn btn-dark">
+          <button type="submit" class="btn btn-dark">
             <div class="card card-body bg-dark" id="submitbtn">
               Submit
             </div>

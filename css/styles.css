@@ -2,7 +2,7 @@ body{
    padding-right: 0px;
 }
 .container{
-  border-left: 5px solid black;
+  border-left: 6px solid black;
   min-height: 1600px;
   max-width: auto;
 }
@@ -11,9 +11,10 @@ h1{
   font-weight: 800;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  border: 5px solid black;
+  padding-left: 16px;
+  border: 11px solid black;
   border-top: 16px solid black;
+  border-bottom: 16px solid black;
   color: #7A0082;
   background-color: #5BD0DE
 }
@@ -43,7 +44,7 @@ h3{
 }
 .btn-dark{
   min-width: 525px;
-  margin-left: 100px;
+  margin-left: 82px;
 }
 #submitbtn{
   font-weight: 200;
