@@ -51,6 +51,6 @@ h3{
   text-align: center;
   color: white;
 }
-#js, #python, #go{
+.python, .go{
   display: none;
 }
