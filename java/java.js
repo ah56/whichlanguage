@@ -1,41 +1,37 @@
 $(document).ready(function(){
-  alert("the fire");
+  //alert("the fire");
 $('#someform').submit(function(event){
-  alert("the second fire");
+  $(".jss").hide();
+  $(".python").hide();
+  $(".go").hide();
+  //alert("the second fire");
   var imputBug = parseInt($("select#bug").val());
-  if (imputBug= 0){
-    $("jss").append("You Speak JS!");
-  };
-  alert("the third fire");
+  //alert("the third fire");
   var imputBird= parseInt($("select#bird").val());
-  if (imputBird= 1){
-    $(".jss").text("You Speak JS!");
-  };
-  alert("the forth fire");
+  //alert("the forth fire");
   var imputCat=parseInt($("select#cat").val());
-  if (imputCat= 0){
-    $('.jss').show();
-  };
+
   var imputBlackKeys=parseInt($("select#blackkeys").val());
-  if (imputBlackKeys= 1){
-    $('.python').show();
-  };
+
   var imputIndiferent=parseInt($("select#indiferent").val());
-  if (imputIndiferent= 0){
-    $('.python').show();
-  };
+
   var imputDiamond=parseInt($("select#diamond").val());
-  if (imputDiamond= 0){
-    $('.go').show();
-  };
+
   var imputFly=parseInt($("select#fly").val());
-  if (imputFly= 1){
-    $('.go').show();
-  };
+
+    if ((imputBug+imputCat+imputFly+imputBird+imputDiamond+imputBlackKeys+imputIndiferent)===0){
+      $(".go").show();
+    }
+    else if ((imputBug+imputCat+imputFly+imputBird+imputDiamond+imputBlackKeys+imputIndiferent)===1){
+      $(".python").show();
+    }
+    else if ((imputBug+imputCat+imputFly+imputBird+imputDiamond+imputBlackKeys+imputIndiferent)>= 2){
+      $(".jss").show();
+    }
   event.preventDefault();
-  alert("the fifth fire");
+  //alert("the fifth fire");
 });
-$("button").click(function(){
-$("button").fadeOut();
-});
+//$("button").click(function(){
+//$("button").fadeOut();
+//});
 });
